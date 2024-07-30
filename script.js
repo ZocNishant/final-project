@@ -10,7 +10,7 @@ time.from(".line h1", {
 
 // for text now
 
-time.from("line1-part1, .line h2", {
+time.from("line1-part1", {
   opacity: 0,
   onStart: function () {
     // counter 0 - 100
@@ -25,6 +25,11 @@ time.from("line1-part1, .line h2", {
       }
     }, 30);
   },
+});
+
+time.to(".line h2", {
+  animationName: "animation",
+  opactiy: 1,
 });
 
 time.to("#loader", {

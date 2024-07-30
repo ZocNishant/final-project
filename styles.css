@@ -10,6 +10,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-y: hidden;
 }
 
 /* Loader Styles */
@@ -57,7 +58,44 @@ body {
 }
 
 .line h2 {
-  font-size: 6.5vw;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+/* animation for loader now text */
+@keyframes animation {
+  0% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+  48% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+  50% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    opacity: 1;
+  }
+  100% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    opacity: 0;
+  }
 }
 
 /* Main Styles */
