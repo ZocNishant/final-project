@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,18 @@ body {
   height: 100%;
   width: 100%;
   overflow-y: hidden;
+}
+
+/* cursor */
+#cursor {
+  height: 2.1vw;
+  width: 2.1vw;
+  border-radius: 50%;
+  border: 1px solid #bdbdbd;
+  position: fixed;
+  z-index: 999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
 }
 
 /* Loader Styles */
@@ -108,4 +122,66 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #151515;
+}
+
+#page1 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.3vw 5.5vw;
+}
+
+#nav h2 {
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+#nav #nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+#nav2 h4 {
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+.hero {
+  width: 70%;
+  margin-left: 27%;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 99999;
+}
+
+.hero:nth-child(2) {
+  margin-top: 15vh;
+}
+
+.hero h1 {
+  font-size: 5.5vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 6.5vw;
+}
+
+.hero h2,
+.hero h3 {
+  font-size: 5.5vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 6.5vw;
+}
+
+.hero h2:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+  font-weight: 400;
 }
